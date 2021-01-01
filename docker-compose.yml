@@ -1,0 +1,11 @@
+version: "3.5"
+
+services:
+
+  python:
+    image: mtm_image
+    restart: unless-stopped
+    volumes:
+      - .:/app
+    tty: true
+    command: 'bash'
